@@ -1,0 +1,10 @@
+[Unit]
+Description=Nautilus Path Watcher
+
+[Service]
+ExecStart=%h/.local/bin/nautilus-path-watcher.sh
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=default.target
